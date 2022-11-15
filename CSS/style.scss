@@ -24,42 +24,45 @@ body {
     flex-direction: column;
 }
 
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .attribution {
+
     font-size: 11px; 
     text-align: center; 
-    height: 1%;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-   
-   }
-
-   @media(max-width:800px) {
-    .attribution {
-        max-width: 80%;
-        max-height: 50%;
-    }
+    margin-top: -5rem;
+    
 }
 
-@media(min-width:801px){
-    .attribution{
-        max-width: 50%;
-    }
-}
+
 .attribution a { 
-   color: $color-a
+   color: $color-a;
 }
 
 .main {
 
     background-color: $color-white;
-    margin: 3rem auto;
+    margin: 0 auto;
     padding: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     border-radius: 3%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
     
 }
 
@@ -67,42 +70,33 @@ body {
 
 @media(max-width:800px) {
     .main {
-        max-width: 80%;
-        max-height: 50%;
+        width: 60%;
+        height: 50vh;
     }
 }
 
 @media(min-width:801px){
     .main {
-        max-width: 50%;
+        width: 70%;
+        height: 60vh;
     }
 }
 
 .img {
-    max-width: 100%;
-    height: 50%;
-    height: 15rem;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-
+    
 }
 
-// @media(max-width: 800px){
-//     .img {
-//         width: calc(6rem + 1vh);
-//         height: calc(6rem + 1vh)
-//     }
-// }
-
 .img img {
-    
-    
+
     border-radius: 3%;
     max-width: 100%;
     max-height: 100%;
-    
-    
+
 }
 
 .text {
@@ -110,7 +104,10 @@ body {
     font-size: 10px;
     max-width: 100%;
     margin-top: 1rem;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .text h1 {
@@ -121,5 +118,6 @@ body {
 .text p {
     text-align: center;
 }
+
 
 
